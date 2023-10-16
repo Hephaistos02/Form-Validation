@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form" action="">
+    <div class="main-container">
+        <div class="heading">
+            <h1>Registration Form</h1>
+        </div>
+        <div class="name">
+            <div class="error-name">
+                <p id="error-name"></p>
+            </div>
+            <label for="">Enter Full Name:</label>
+            <input id="name" type="text">
+        </div>
+        <div class="email">
+            <div class="error-email">
+                <p id="error-email" ></p>
+            </div>
+            <label for="">Enter your Registered email:</label>
+            <input id="email" type="email">
+        </div>
+        <div class="password">
+            <div class="error-password">
+                <p id="error-password" ></p>
+            </div>
+            <label for="">Enter Password:</label>
+            <input id="password" type="password">
+        </div>
+        <div class="address">
+            <div class="error-address">
+                <p id="error-address" ></p>
+                <br>
+            <label for="">Enter your Full Address:</label>
+            <textarea name="" id="address" cols="79" rows="10"></textarea>
+        </div>
+        </div>
+        <div class="hobbies">
+            <div class="error-hobbies">
+                <p id="error-hobbies" ></p>
+            </div>
+            <label for="">Select your boddies if any:</label>
+            <label for="">Singing</label>
+            <input type="checkbox" name="hobbies" id="sing" value="checked">
+            <label for="">Dancing</label>
+            <input type="checkbox" name="hobbies" id="dance" value="checked">
+            <label for="">Listening to music</label>
+            <input type="checkbox" name="hobbies" id="music" value="checked">
+        </div>
+        <div class="gender">
+            <div class="error-gender">
+                <p id="error-gender"></p>
+            </div>
+            <label for=" gender">Select Gender:</label>
+            <input type="radio" id="gender" name="gender" value="male"> Male
+            <input type="radio" id="gender" name="gender" value="female"> Female
+            <input type="radio" id="gender" name="gender" value="other"> Other
+        </div>
+
+        <div class="file">
+            <div class="error-file">
+                <p id="error-file"></p>
+            </div>
+            <label for="">Upload Your Photo:</label>
+            <input id="file" type="file">
+        </div>
+        <div class="button">
+            <button style="color: white; background-color: black; border: none;" type="reset">Clear</button>
+            <button id="click" onclick="check()" style="color: black; background-color: white; border: 1px solid black;" type="button">Submit</button>
+        </div>
+    </div>
+</form>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
